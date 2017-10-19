@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>markdown previewer</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/vue"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <textarea rows="50" cols="80">此处放初始值</textarea>
+    </form>
+    <div id="show">
+        {{previewer}}
+    </div>
+    <script>
+        var vm = new Vue({
+            el: '#show',
+            data: {
+
+            },
+            computed: {
+                previewer: function () {
+
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
